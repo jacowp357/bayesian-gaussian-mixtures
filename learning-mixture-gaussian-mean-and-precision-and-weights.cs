@@ -63,7 +63,7 @@ namespace TestInfer
             VariableArray<int> z = Variable.Array<int>(numDataPoints).Named("z");
 
             // create Dirichlet prior for mixture weights 
-            Variable<Vector> weights = Variable.Dirichlet(k, new double[] { 1.1, 1.1, 1.1});
+            Variable<Vector> weights = Variable.Dirichlet(k, new double[] { 1.2, 1.2, 1.2 });
 
             // the using syntax see: https://dotnet.github.io/infer/userguide/ForEach%20blocks.html
             using (Variable.ForEach(numDataPoints))
